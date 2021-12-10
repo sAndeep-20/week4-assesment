@@ -1,0 +1,35 @@
+<h3>Create Customer</h3>
+<div [hidden]="submitted" style="width: 600px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Id</label>
+      <input type="text" class="form-control" id="Id" required [(ngModel)]="customer.id" name="id" ng-model="id" required>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="Name" required [(ngModel)]="customer.Name" name="Name" ng-model="Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Age</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="customer.age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" class="form-control" id="Address" required [(ngModel)]="customer.Address" name="Address">
+    </div>
+
+    <div class="form-group">
+      <label for="name">AccountType</label>
+      <input type="text" class="form-control" id="AccountType" required [(ngModel)]="customer.AccountType" name="AccountType">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Customer details created successfully!</h4>
+</div>

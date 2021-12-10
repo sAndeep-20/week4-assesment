@@ -1,0 +1,26 @@
+<h2>Customer Details</h2> 
+
+<hr/>
+<div *ngIf="customer">
+  <div>
+    <label><b>Id: </b></label> {{customer.id}}
+  </div>
+  <div>
+    <label><b>Name: </b></label> {{customer.name}}
+  </div>
+  <div>
+    <label><b>age: </b></label> {{customer.age}}
+  </div>
+  <div>
+    <label><b>Address: </b></label> {{customer.Address}}
+  </div>
+  <div>
+    <label><b>AccountType: </b></label> {{customer.accountType}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Customer List</button><br>
+
+
